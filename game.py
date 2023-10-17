@@ -1,5 +1,7 @@
 #Libraries
 import os
+import time
+import random as r
 
 #Functions
 def mainMenu():
@@ -20,3 +22,41 @@ def mainMenu():
     selection = input("What would you like to do? [1-4]: ")
     return
 
+def rules():
+    print("Instructions: ")
+    return
+
+def credits():
+
+    return
+
+def play():
+    os.system('cls') #clear terminal
+    
+    cards = ["Ah", "Ad", "Ac", "As",
+    "2h", "2d", "2c", "2s",
+    "3h", "3d", "3c", "3s",
+    "4h", "4d", "4c", "4s",
+    "5h", "5d", "5c", "5s",
+    "6h", "6d", "6c", "6s",
+    "7h", "7d", "7c", "7s",
+    "8h", "8d", "8c", "8s",
+    "9h", "9d", "9c", "9s",
+    "10h", "10d", "10c", "10s",
+    "Jh", "Jd", "Jc", "Js",
+    "Qh", "Qd", "Qc", "Qs",
+    "Kh", "Kd", "Kc", "Ks"]
+
+    r.shuffle(cards)
+
+    cards.insert((r.randint(0,51)), 'SHUFFLE')
+
+
+    print(cards)
+
+
+
+
+    return
+
+play()
