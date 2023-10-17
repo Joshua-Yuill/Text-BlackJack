@@ -34,7 +34,7 @@ def mainMenu():
         credits()
 
     else:
-        print("That was and ivlaid input, please try again")
+        print("That was and invalid input, please try again")
         time.sleep(15)
         mainMenu()
 
