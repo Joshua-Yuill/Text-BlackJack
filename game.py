@@ -11,4 +11,12 @@ def mainMenu():
     print("|  O  ||     ||  _  /   \_ |     \/  |  ||  _  /   \_ |     \ ")
     print("|     ||     ||  |  \     ||  .  |\  `  ||  |  \     ||  .  | ")
     print("|_____||_____||__|__|\____||__|\_| \____||__|__|\____||__|\_| ")
+    print("                                                             ")
+    print("1. Play")
+    print("2. Instructions")
+    print("3. Quit")
+    print("4. Credits")
+    print(" ")
+    selection = input("What would you like to do? [1-4]: ")
     return
+
