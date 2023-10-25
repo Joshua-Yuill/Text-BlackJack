@@ -65,15 +65,29 @@ def play():
     "Qh", "Qd", "Qc", "Qs",
     "Kh", "Kd", "Kc", "Ks"]
 
-    r.shuffle(cards)
+    deck = []
+    breakCard = r.randint(2,7)
 
-    cards.insert((r.randint(0,51)), 'SHUFFLE')
+    for i in range (0,7):
 
+        print (i)
+        print (breakCard)
 
-    print(cards)
+        r.shuffle(cards)
 
+                    #THIS DOES NOT WORK, SOMETHING IS SERIOUSLY WRONG WITH THIS
+        if i == breakCard:
+            shuffleCard = []
+            shuffleCard = cards
+            shuffleCard.insert((r.randint(0,51)), 'SHUFFLE')
+            deck.append(str(shuffleCard))
+            print("True")
+        else:
+            deck.append(str(cards))
+            print("False")
 
-
+    
+    print(deck)
 
     return
 
